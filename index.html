@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bri K Homepage</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com"> <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+
+  h1, h2, h3, h4 {
+ font-family: "Lobster", sans-serif; font-weight: 400; font-style: normal; color: #cc3f7c;
+           }
+
+    header {
+      text-align: center;
+      background-color: #ffe0f0;
+      padding: 2rem 1rem;
+    }
+
+    header img {
+      max-width: 120px;
+      border-radius: 50%;
+    }
+
+    h1, h2 {
+      color: #cc3f7c;
+      margin-bottom: 0.5rem;
+    }
+
+    nav {
+      background-color: #f9d6e5;
+      padding: 0.5rem 0;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #663366;
+      font-weight: bold;
+      font-size: 1rem;
+    }
+
+
+    nav a {
+      text-decoration: none;
+      color: #663366;
+      font-weight: bold;
+      font-size: 1rem;
+      padding: 0.5rem 1rem;
+      display: inline-block;
+      cursor: pointer; 
+    }
+
+    main {
+      max-width: 1000px;
+      margin: auto;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    .image-right {
+      width: 300px;
+      height: auto;
+      border-radius: 8px;
+      margin: 1rem auto;
+    }
+
+    footer {
+      background-color: #ffe0f0;
+      text-align: center;
+      padding: 2rem 1rem;
+      margin-top: 3rem;
+    }
+
+    footer a {
+      color: #663366;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+     <h1>Bri K’s Website</h1>
+    <p>Curiosity. Creativity. Compassion.</p>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+     <li><a href="skills.html">My Skills</a></li>
+         </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+
+    <!-- Home Section -->
+    <section id="home">
+      <h2>Welcome Into My World</h2>
+      <img src="Publication1.jpg" class="image-right" alt="Project image" />
+      <p style="font-style: italic; font-size: 20px;">
+        Hi! I'm Bri — a 16-year-old exploring the world through STEM, guitar strings, video game pixels, and languages (both human & computer).<br><br>
+        I’m passionate about making a difference, currently raising awareness about period poverty — because dignity and access to basic needs should be universal.<br><br>
+        This is my corner of the internet — where curiosity, creativity, and compassion collide.
+      </p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <p>You can reach me at: <a href="bri@mail.com">bk@email.com</a></p>
+      <p>Or follow me on social media:</p>
+      <p>
+        <a href="www.instagram.com">Instagram</a> |
+        <a href="www.pinterest.com">Pinterest</a> |
+        <a href="www.linkedin.com">LinkedIn</a>
+      </p>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Bri K </p>
+  </footer>
+
+  <!-- JavaScript -->
+
+  <script>
+    document.querySelectorAll('nav a').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        const href = this.getAttribute('href');
+        if (href.startsWith('#')) {
+          e.preventDefault();
+          const target = document.querySelector(href);
+          if (target) {
+            target.scrollIntoView({ behavior: 'smooth' });
+          }
+        }
+      });
+    });
+  </script>
+  </body>
+</html> 
