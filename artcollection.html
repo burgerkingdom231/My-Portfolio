@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bri K's Website</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fef6f9;
+      color: #333;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      text-align: center;
+      background-color: #ffe0f0;
+      padding: 2rem 1rem;
+    }
+
+    h1, h2 {
+      color: #cc3f7c;
+      margin-bottom: 0.5rem;
+    }
+
+    nav {
+      background-color: #f9d6e5;
+      padding: 0.5rem 0;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #663366;
+      font-weight: bold;
+      font-size: 1rem;
+    }
+
+    nav a:hover {
+      color: #cc3f7c;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: auto;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    .portfolio-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .item {
+      background-color: #fff0f5;
+      padding: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .item img {
+      width: 100%;
+      border-radius: 8px;
+      max-height: 150px;
+      object-fit: cover;
+    }
+
+    footer {
+      background-color: #ffe0f0;
+      text-align: center;
+      padding: 2rem 1rem;
+      margin-top: 3rem;
+    }
+
+    footer a {
+      color: #663366;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Bri K’s Website</h1>
+    <p>Art Collection</p>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="portfolio.html">My Portfolio</a></li>
+      <li><a href="skills.html">My Skills</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Portfolio Section -->
+    <section id="portfolio">
+      <h2>Different Art Collection</h2>
+      <p>
+        A showcase of my creative side—from sketches and paintings to digital art and design experiments. Each piece captures ideas, emotions, and stories in visual form.
+      </p>
+
+      <div class="portfolio-grid">
+        <div class="item">
+          <img src="bitterfly.jpg" alt="Butterfly artwork">
+          <p>Butterfly</p>
+        </div>
+        <div class="item">
+          <img src="cake.jpg" alt="Cake sculpture">
+          <p>Cake Sculpture</p>
+        </div>
+        <div class="item">
+          <img src="cake 2.jpg" alt="Cake oil painting">
+          <p>Cake Oil Painting</p>
+        </div>
+        <div class="item">
+          <img src="owl.jpg" alt="Eyes drawing and painting">
+          <p>Eyes Drawing & Painting</p>
+        </div>
+        <div class="item">
+          <img src="hat.jpg" alt="Still drawing">
+          <p>Still Drawing</p>
+        </div>
+        <div class="item">
+          <img src="paper.jpg" alt="Charcoal drawing">
+          <p>Charcoal Drawing</p>
+        </div>
+        <div class="item">
+          <img src="pris.jpg" alt="Shading light and shadow artwork">
+          <p>Shading Light & Shadow</p>
+        </div>
+        <div class="item">
+          <img src="steve.jpg" alt="Pencil drawing">
+          <p>Pencil Drawing</p>
+        </div>
+        <div class="item">
+          <img src="weir.jpg" alt="Scrap paper art">
+          <p>Scrap Paper Art</p>
+        </div>
+        <div class="item">
+          <img src="hands.jpg" alt="Basic neutral net art">
+          <p>Basic Neutral Net</p>
+        </div>
+        <div class="item">
+          <img src="pipa.jpg" alt="Passion project artwork">
+          <p>Passion Project</p>
+        </div>
+        <div class="item">
+          <img src="bit.jpg" alt="Oil painting">
+          <p>Oil Paint</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" style="margin-top: 3rem;">
+      <h2>Contact Me</h2>
+      <p>Email: <a href="mailto:bk@email.com">bk@email.com</a></p>
+      <p>Follow me on:</p>
+      <p>
+        <a href="http://www.instagram.com/beadsforlifenj">Instagram</a> |
+        <a href="http://www.github.com/burgerkingdom231">GitHub</a> |
+        <a href="http://www.linkedin.com/in/briannakivugo">LinkedIn</a>
+      </p>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Bri K</p>
+  </footer>
+
+</body>
+</html>
