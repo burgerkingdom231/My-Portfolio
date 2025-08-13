@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Bri K - My Skills</title>
+  <title>Bri K - Skills</title>
   <style>
     body {
       margin: 0;
@@ -17,11 +17,6 @@
       text-align: center;
       background-color: #ffe0f0;
       padding: 2rem 1rem;
-    }
-
-    header img {
-      max-width: 120px;
-      border-radius: 50%;
     }
 
     h1, h2 {
@@ -59,7 +54,7 @@
     }
 
     main {
-      max-width: 800px;
+      max-width: 1000px;
       margin: auto;
       padding: 2rem;
       text-align: center;
@@ -75,27 +70,68 @@
       border-radius: 12px;
     }
 
-    .skills-list {
-      background-color: #fff0f5;
-      border-radius: 10px;
-      padding: 1.5rem;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      text-align: left;
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
     }
 
-    .skills-list h2 {
+    /* Flip Card Container */
+    .flip-card {
+      background-color: transparent;
+      perspective: 1000px;
+    }
+
+    .flip-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      transform-style: preserve-3d;
+      transition: transform 0.6s;
+    }
+
+    .flip-card:hover .flip-inner {
+      transform: rotateY(180deg);
+    }
+
+    .flip-front, .flip-back {
+      position: absolute;
+      width: 100%;
+      height: 200px;
+      backface-visibility: hidden;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .flip-front {
+      background-color: #fff0f5;
       text-align: center;
     }
 
-    .skills-list ul {
-      columns: 2;
-      padding-left: 1rem;
-      margin: 0;
-      list-style: square;
+    .flip-back {
+      background-color: #ffe0f0;
+      transform: rotateY(180deg);
+      text-align: center;
     }
 
-    .skills-list li {
-      font-size: 1rem;
+    .flip-front h3, .flip-back h3 {
+      text-align: center;
+      margin-bottom: 1rem;
+      color: #cc3f7c;
+    }
+
+    .flip-front ul {
+      list-style: square;
+      padding-left: 1.2rem;
+      margin: 0;
+    }
+
+    .flip-front li {
       margin-bottom: 0.5rem;
     }
 
@@ -112,10 +148,8 @@
       font-weight: bold;
     }
 
-    @media (max-width: 600px) {
-      .skills-list ul {
-        columns: 1;
-      }
+    footer a:hover {
+      color: #cc3f7c;
     }
   </style>
 </head>
@@ -123,7 +157,7 @@
 
   <!-- Header -->
   <header>
-       <h1>Bri K's Website</h1>
+    <h1>Bri K's Website</h1>
     <p>My Creative and Technical Skills</p>
   </header>
 
@@ -131,9 +165,8 @@
   <nav>
     <ul>
       <li><a href="index.html">Home</a></li>
-      <li><a href="skills.html">Portfolio</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
       <li><a href="skills.html">Skills</a></li>
-       <li><a href="myprojects.html">My Projects</a></li>
     </ul>
   </nav>
 
@@ -142,53 +175,87 @@
     <section id="skills">
       <!-- Centered Image -->
       <div class="skills-photo">
-        <img src="bunner.jpg" alt="Skill Image" />
+        <img src="assets/bunner.jpg" alt="Skills showcase image" />
       </div>
 
-      <!-- Skills List -->
-      <div class="skills-list">
-        <h2>Skills I’ve Been Building</h2>
-        <ul>
-          <li>Web Design</li>
-          <li>Web Developing</li>
-          <li>Sketch</li>
-          <li>HTML5</li>
-          <li>CSS</li>
-          <li>JavaScript</li>
-          <li>Python</li>
-          <li>Video Editing</li>
-          <li>Graphic Design</li>
-          <li>Adobe Photoshop</li>
-          <li>Adobe Creative Suite</li>
-          <li>3D Modeling</li>
-          <li>Revit</li>
-          <li>Music Editing</li>
-         <li>Audacity</li>
-         <li>Mixx</li>
-        <li>Broadcasting</li>
-        <li>Creative Writing</li>
-        <li>Editing</li>
-        </ul>
+      <h2>Skills I’ve Been Building</h2>
+      <div class="skills-grid">
+
+        <!-- Card 1 -->
+        <div class="flip-card">
+          <div class="flip-inner">
+            <div class="flip-front">
+              <h3>Web & Design</h3>
+              <p>Web Design • Web Development • Sketch • HTML5 • CSS • JavaScript</p>
+            </div>
+            <div class="flip-back">
+              <h3>Example Projects</h3>
+              <p>Personal portfolio, Social activist website, Custom blog themes.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="flip-card">
+          <div class="flip-inner">
+            <div class="flip-front">
+              <h3>Creative Tools</h3>
+              <p>Python • Video Editing • Graphic Design • Adobe Photoshop • Adobe Creative Suite • 3D Modeling • Revit</p>
+            </div>
+            <div class="flip-back">
+              <h3>Example Projects</h3>
+              <p> Designed a 3D model of an eco friendly retirement community, Breach Bot, Ceasar's Cipher </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="flip-card">
+          <div class="flip-inner">
+            <div class="flip-front">
+              <h3>Media & Writing</h3>
+              <p>Music Editing • Audacity • Mixx • Broadcasting • Creative Writing • Editing</p>
+            </div>
+            <div class="flip-back">
+              <h3>Example Projects</h3>
+              <p>Produce & Brodact Online Radio, Podcast editing, Editing a children magazine </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="flip-card">
+          <div class="flip-inner">
+            <div class="flip-front">
+              <h3>Data & Analytics</h3>
+              <p>Spreadsheets • Data Analysis • Data Visualization • Exploratory Data Analysis (EDA) • Data Cleaning • Data Wrangling</p>
+            </div>
+            <div class="flip-back">
+              <h3>Example Projects</h3>
+              <p>Business sales dashboard, Interned as an Associate Data Analyst.</p>
+            </div>
+          </div>
+        </div>
+
       </div>
     </section>
-    
+
     <!-- Contact Section -->
-    <section id="contact">
+    <section id="contact" style="margin-top: 20rem;">
       <h2>Contact Me</h2>
-      <p>You can reach me at: <a href="http://www.linkedin.com/in/briannakivugo">LinkedIn</a></p>
-      <p>Or follow me on social media:</p>
+      <p>Email: <a href="mailto:bk@email.com">bk@email.com</a></p>
+      <p>Follow me on social media:</p>
       <p>
-        <a href="http://www.instagram.com/BeadsforLife">Instagram</a> |
-        <a href="http://www.github.com/burgerkingdom231">Github</a> |
-        <a href="http://www.linkedin.com/in/briannakivugo">LinkedIn</a>
+        <a href="http://www.instagram.com">Instagram</a> |
+        <a href="http://www.pinterest.com">Pinterest</a> |
+        <a href="http://www.linkedin.com">LinkedIn</a>
       </p>
     </section>
-
   </main>
 
   <!-- Footer -->
   <footer>
-    <p>© 2025 Bri K </p>
+    <p>© 2025 Bri K</p>
   </footer>
 
 </body>
