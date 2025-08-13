@@ -19,11 +19,6 @@
       padding: 2rem 1rem;
     }
 
-    header img {
-      max-width: 120px;
-      border-radius: 50%;
-    }
-
     h1, h2 {
       color: #cc3f7c;
       margin-bottom: 0.5rem;
@@ -87,9 +82,24 @@
 
     .item img {
       width: 100%;
-      border-radius: 8px;
-      max-height: 150px;
+      max-height: 140px;
       object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .item p {
+      margin-top: 0.8rem;
+      font-weight: bold;
+    }
+
+    .item a {
+      color: #663366;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .item a:hover {
+      color: #cc3f7c;
     }
 
     footer {
@@ -134,26 +144,25 @@
       <h2>Portfolio</h2>
       <div class="portfolio-grid">
         <div class="item">
-          <img src="Publication.jpg" alt="Publications preview image">
+          <img src="Publication.jpg" alt="Preview of publications">
           <p><a href="publications.html">Publications</a></p>
         </div>
         <div class="item">
-          <img src="Arts.jpg" alt="Art collection preview image">
+          <img src="Arts.jpg" alt="Preview of art collection">
           <p><a href="artcollection.html">Art Collection</a></p>
         </div>
-<div class="item">
-          <img src="bunner.jpg" alt="Projects preview image">
+        <div class="item">
+          <img src="bunner.jpg" alt="Preview of projects">
           <p><a href="projects.html">Projects</a></p>
         </div>
-       
-             </div>
+      </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact">
+    <section id="contact" style="margin-top: 3rem;">
       <h2>Contact Me</h2>
-      <p>Reach me at : <a href="www.linkedid.com/in/briannakivugo">bri@mail.com</a></p>
-      <p>Or Let's Connect on: </p>
+      <p>Email: <a href="mailto:bri@mail.com">bri@mail.com</a></p>
+      <p>Let's Connect:</p>
       <p>
         <a href="http://www.instagram.com/beadsforlifenj">Instagram</a> |
         <a href="http://www.github.com/burgerkingdom231">GitHub</a> |
