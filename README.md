@@ -5,8 +5,9 @@ Bri K’s Website” – This project is a personal portfolio website designed t
 It was a summer project for Girls Who Code (SPP)
 
 # How It Was Made
-HTML for structure and content.
-CSS for styling and layout.
+HTML: Provides the structure of the site (navigation, headings, sections for about me, portfolio and skills).
+CSS: Styles the site, ensuring it looks clean, organized and easy to read.
+JavaScript: Adds interactivity. Specifically, a script enables smooth scrolling when you click navigation links.
 
 # Struggles 
 While creating this portfolio, I faced challenges such as:
@@ -18,4 +19,6 @@ While creating this portfolio, I faced challenges such as:
 - The importance of semantic HTML for readability and accessibility.
 - How CSS can transform a plain page into a polished site.
 - Basic deployment workflows with GitHub Pages.
+
+[![Athena Award Badge](https://img.shields.io/endpoint?url=https%3A%2F%2Faward.athena.hackclub.com%2Fapi%2Fbadge)](https://award.athena.hackclub.com?utm_source=readme)
 
