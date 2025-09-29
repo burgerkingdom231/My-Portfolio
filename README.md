@@ -18,6 +18,9 @@ While creating this portfolio, I faced challenges such as:
     - Structuring clean, organized HTML for multiple sections.
     - Making the design look cohesive and easy to navigate.
     - Learning how to host and update a site using GitHub Pages.
+
+   ** This is a school project that is still in its early stage....**
+
   
 # Learnings
    - The importance of semantic HTML for readability and accessibility.
